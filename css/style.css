@@ -10,7 +10,10 @@ body {
 	max-width: 1000px;
 	margin: 0 auto;
 }
+/* ================== header ================ */
 .header {
+	position: relative;
+	z-index: 100;
 	background-color: #e8ebf1;
 	padding: 38px 0 38px 0;
 }
@@ -119,3 +122,103 @@ body {
 .drop-down__link:hover {
 	color: var(--blue-color);
 }
+/* ================== /header ================ */
+/* ================== slider ================ */
+.slider {
+	background-color: var(--blue-color-lite);
+	min-height: 500px;
+	padding: 20px 0 10px;
+}
+.slider__item {
+	background: url("../images/slider-bg.jpg") top center / cover no-repeat;
+	height: 440px;
+}
+.slider__item-title {
+	font-size: 50px;
+	line-height: 1.2;
+	font-weight: 700;
+	color: var(--white);
+	width: 295px;
+	min-height: 219px;
+	margin-left: 60px;
+	padding-top: 102px;
+}
+.slick-dots li button {
+	margin-top: 8px;
+	width: 14px;
+	height: 14px;
+	border-radius: 50%;
+	background-color: rgba(98, 98, 98, 0.5);
+}
+.slick-dots li button::before {
+	display: none;
+}
+.slick-active li {
+	margin: 0 9px;
+	width: auto;
+	height: auto;
+}
+.slick-dots li.slick-active button {
+	background-color: var(--white);
+}
+/* ================== /slider ================ */
+/* ================== advantages ================ */
+.advantages {
+	min-height: 301px;
+	background-color: var(--gray-bg);
+	padding: 60px 0 52px;
+}
+.advantages__wrapper {
+	display: flex;
+	align-items: start;
+	justify-content: space-between;
+}
+.advantages__item {
+	width: 216px;
+	min-height: 190px;
+}
+.item__head {
+	display: flex;
+	align-items: center;
+}
+.item__round {
+	width: 40px;
+	height: 40px;
+	background-color: var(--blue-color);
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.item__header {
+	font-family: Arial, sans-serif;
+	font-size: 15px;
+	line-height: 20px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: var(--title-color);
+	margin-left: 15px;
+}
+.item__descr,
+.item__link {
+	margin-top: 19px;
+	font-family: Arial, sans-serif;
+	font-size: 13px;
+	line-height: 20px;
+	font-weight: 400;
+	color: var(--text-color);
+}
+.item__link {
+	display: inline-block;
+	margin-top: 20px;
+	color: var(--blue-color);
+}
+.item__link::before {
+	content: ">";
+	margin-right: 5px;
+	font-weight: 700;
+	width: 10px;
+	height: 10px;
+	color: var(--text-color);
+}
+/* ================== /advantages ================ */
