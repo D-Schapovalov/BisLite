@@ -236,39 +236,67 @@ body {
 	background-color: var(--white);
 }
 .works__title {
+	position: relative;
 	font-family: Arial, sans-serif;
 	font-size: 15px;
 	line-height: 20px;
 	font-weight: 700;
 	text-transform: uppercase;
 	color: var(--title-color);
-	padding-left: 38px;
-	position: relative;
 	margin-bottom: 18px;
+	padding: 0px 0px 0px 37px;
 }
 .works__title::before {
 	content: "";
 	position: absolute;
-	bottom: 0;
 	left: 0;
-	background-image: url("../icons/works-shape.svg");
-	background-repeat: no-repeat;
-	height: 27px;
-	width: 17px;
+	bottom: 0;
+	height: 24px;
+	width: 14px;
+	background: url("../icons/works-shape.svg") no-repeat;
 }
-.works__slider-inner {
+.works__inner {
 	padding: 20px 0 40px;
 	border-top: 1px solid var(--border);
 	border-bottom: 1px solid var(--border);
 }
-.slick-list {
-	margin-left: -15px;
-	margin-right: -15px;
-}
-.works__slider-item {
+.works__item {
 	text-align: center;
 }
-
+.works__box {
+	position: relative;
+	display: inline-block;
+}
+.works__box:hover .works__link {
+	height: 80px;
+}
+.works__link {
+	position: absolute;
+	bottom: 0;
+	height: 0;
+	width: 100%;
+	overflow: hidden;
+	background-color: var(--blue-color);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: all 0.5s ease;
+}
+.works__link a {
+	margin: 0 15px;
+}
+.slick-list {
+	margin: 0 -15px;
+}
+.slick-prev {
+	right: 30px;
+	top: -25px;
+	left: auto;
+}
+.slick-next {
+	right: 0px;
+	top: -25px;
+}
 .slick-arrow {
 	width: 20px;
 	height: 20px;
@@ -281,36 +309,5 @@ body {
 .slick-arrow:hover,
 .slick-arrow:focus {
 	background-color: var(--blue-color);
-}
-.slick-prev {
-	right: 30px;
-	top: -30px;
-	left: auto;
-}
-.slick-next {
-	right: 0px;
-	top: -30px;
-}
-.works__slider-box {
-	display: inline-block;
-	position: relative;
-}
-.works__slider-links {
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-	height: 0;
-	background-color: var(--blue-color);
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	overflow: hidden;
-	transition: all 0.5s ease;
-}
-.works__slider-box:hover .works__slider-links {
-	height: 80px;
-}
-.works__slider-links a {
-	margin: 0 15px;
 }
 /* ================== /works ================ */
