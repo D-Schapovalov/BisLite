@@ -311,3 +311,112 @@ body {
 	background-color: var(--blue-color);
 }
 /* ================== /works ================ */
+/* ================== client ================ */
+.client {
+	margin-top: 20px;
+}
+.client__inner {
+	display: flex;
+	align-items: start;
+}
+.client__item {
+	width: 50%;
+}
+.client__title-testimonials,
+.client__title-clients {
+	position: relative;
+	font-family: Arial, sans-serif;
+	font-size: 15px;
+	line-height: 20px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: va(--title-color);
+	padding: 0px 0px 0px 40px;
+}
+.client__title-testimonials::before,
+.client__title-clients::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 23px;
+	width: 27px;
+	background: url("../icons/comments.svg") no-repeat;
+}
+.client__title-clients::before {
+	background: url("../icons/clients.svg") no-repeat;
+}
+.client__descr,
+.client__autor {
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 400;
+	color: var(--text-color);
+	max-width: 425px;
+	margin: 22px 0px 0px 0px;
+}
+.client__autor {
+	font-weight: 700;
+	font-style: italic;
+	margin: 34px 0px 0px 0px;
+}
+.client__item-box {
+	margin: 19px 0px 0px 0px;
+	display: flex;
+	flex-wrap: wrap;
+}
+.clients__item-img {
+	width: 160px;
+	height: 101px;
+	background-color: var(--white);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid var(--gray-bg);
+	box-shadow: inset 0px 0px 25px 0px var(--gray-bg);
+}
+/* ================== /client ================ */
+/* ================== download ================ */
+.download {
+	min-height: 140px;
+	background-color: var(--blue-light);
+	border: 1px solid var(--blue-color-lite);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 35px;
+	margin: 41px 0px 0px 0px;
+}
+.download__descr {
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	line-height: 26px;
+	font-weight: 400;
+	color: var(--text-color);
+	max-width: 607px;
+}
+.download__btn {
+	padding: 22px 20px 22px 67px;
+	background-color: var(--blue-color-superlite);
+	background-image: linear-gradient(0deg, var(--blue-color) 0%, #60cede 10%, #72dae6 50%, #81e4ed 100%);
+	box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.2), inset 0px 2px 1px 0px rgba(255, 255, 255, 0.09);
+	font-family: Arial, sans-serif;
+	font-size: 18px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: var(--title-color);
+	border: 1px solid var(--blue-color);
+	border-radius: 8px;
+	position: relative;
+}
+.download__btn::before {
+	content: "";
+	position: absolute;
+	top: 15px;
+	left: 20px;
+	width: 28px;
+	height: 26px;
+	background: url("../icons/download.svg") no-repeat;
+}
+/* ================== /download ================ */
