@@ -332,7 +332,7 @@ body {
 	width: 50%;
 }
 .client__title-testimonials,
-.client__title-clients {
+.client__title-client {
 	position: relative;
 	font-family: Arial, sans-serif;
 	font-size: 15px;
@@ -343,7 +343,7 @@ body {
 	padding: 0px 0px 0px 40px;
 }
 .client__title-testimonials::before,
-.client__title-clients::before {
+.client__title-client::before {
 	content: "";
 	position: absolute;
 	top: 0;
@@ -352,7 +352,7 @@ body {
 	width: 27px;
 	background: url("../icons/comments.svg") no-repeat;
 }
-.client__title-clients::before {
+.client__title-client::before {
 	background: url("../icons/clients.svg") no-repeat;
 }
 .client__descr,
@@ -375,7 +375,7 @@ body {
 	display: flex;
 	flex-wrap: wrap;
 }
-.clients__item-img {
+.client__item-img {
 	flex: 0 0 33.3%;
 	height: 101px;
 	background-color: var(--white);
@@ -386,10 +386,10 @@ body {
 	box-shadow: inset 0px 0px 25px 0px var(--gray-bg);
 	overflow: hidden;
 }
-.clients__item-img img {
+.client__item-img img {
 	transition: all 0.5s ease;
 }
-.clients__item-img img:hover {
+.client__item-img img:hover {
 	transform: scale(1.2, 1.2);
 }
 /* ================== /client ================ */
