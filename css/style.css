@@ -15,8 +15,11 @@ body {
 	position: relative;
 	z-index: 100;
 	background-color: #e8ebf1;
-	padding: 38px 0 38px 0;
+	padding: 38px 0;
 	box-shadow: 0px 2px 5px -1px rgba(0, 0, 0, 0.07);
+}
+.burger {
+	display: none;
 }
 .header__wrapper,
 .menu__list {
@@ -26,9 +29,9 @@ body {
 }
 .header__logo,
 .footer__bottom-logo {
-	text-transform: capitalize;
 	font-size: 50px;
 	color: var(--blue-color);
+	text-transform: capitalize;
 }
 .header__logo span,
 .footer__bottom-logo span {
@@ -507,8 +510,8 @@ body {
 }
 .footer__top-social {
 	margin: 0 17px 9px 0;
-	cursor: pointer;
 	transition: all 0.3s ease-in;
+	cursor: pointer;
 }
 .footer__top-social:nth-child(3n) {
 	margin-right: 0;
@@ -533,3 +536,103 @@ body {
 .footer__bottom-logo {
 }
 /* ================== /footer ================ */
+/* ================== media ================ */
+@media (max-width: 992px) {
+	.container {
+		max-width: 940px;
+	}
+	.header {
+		padding: 20px 0;
+	}
+}
+@media (max-width: 768px) {
+	.container {
+		max-width: 700px;
+	}
+	.header {
+		position: relative;
+		padding: 15px;
+	}
+	.header__logo {
+		position: relative;
+		z-index: 200;
+	}
+	.burger {
+		display: block;
+		width: 30px;
+		height: 20px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		position: relative;
+		z-index: 200;
+	}
+	.burger-item {
+		position: relative;
+		width: 100%;
+		height: 2px;
+		background-color: var(--title-color);
+		transition: all 0.5s ease;
+	}
+	.burger-item.active:first-child {
+		transform: translateY(7px) rotate(-45deg);
+		/* top: 9px; */
+	}
+	.burger-item.active:last-child {
+		transform: translateY(-10px) rotate(45deg);
+		/* bottom: 8px; */
+	}
+	.middle {
+		width: 80%;
+		align-self: center;
+	}
+	.middle.active {
+		display: none;
+	}
+	.menu {
+		position: absolute;
+		top: -400%;
+		right: 0;
+		padding: 30px;
+		background-color: var(--gray-bg);
+		width: 100%;
+		min-height: 270px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		transition: all 0.5s ease;
+	}
+	.menu_active {
+		/* right: 0; */
+		top: 70px;
+	}
+	.menu__list {
+		display: flex;
+		flex-direction: column;
+	}
+	.menu__item + li,
+	.menu__item.drop-down {
+		margin-left: 0px;
+		margin-top: 20px;
+	}
+	.drop-down:hover .drop-down__list {
+		z-index: 120;
+	}
+	.drop-down:hover {
+		padding: 5px;
+	}
+	.drop-down__list {
+		top: 28px;
+		left: -1px;
+	}
+}
+@media (max-width: 575px) {
+	.container {
+		width: 100%;
+		padding: 0 10px;
+	}
+	.header {
+		padding: 10px;
+	}
+}
+/* ================== /media ================ */
