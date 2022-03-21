@@ -14,6 +14,7 @@
 	<link rel="stylesheet" href="css/slick.css">
 	<link rel="stylesheet" href="css/slick-theme.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
 </head>
 
 <body>
@@ -21,36 +22,38 @@
 		<div class="container">
 			<div class="header__wrapper">
 				<a href="#" class="header__logo"><span>Bis</span>Lite</a>
-				<div class="burger">
-					<span class="burger-item"></span>
-					<span class="burger-item middle"></span>
-					<span class="burger-item"></span>
-				</div>
-				<nav class="menu">
+				<nav class="header__menu menu">
 					<ul class="menu__list">
-						<li class="menu__item"><a href="#" class="menu__link">Home</a></li>
-						<li class="menu__item"><a href="#" class="menu__link">About Us</a></li>
-						<li class="menu__item drop-down"><a href="#" class="menu__link">Services</a>
+						<li><a href="#" class="menu__link">Home</a></li>
+						<li><a href="#" class="menu__link">About Us</a></li>
+						<li class="menu__drop-down drop-down">
+							<a href="#" class="menu__link">Services</a>
 							<ul class="drop-down__list">
-								<li class="drop-down__item"><a href="#" class="drop-down__link">Web Design</a></li>
-								<li class="drop-down__item"><a href="#" class="drop-down__link">Wordpress Design</a></li>
-								<li class="drop-down__item"><a href="#" class="drop-down__link">Mobile App Devplopment</a></li>
-								<li class="drop-down__item"><a href="#" class="drop-down__link">Internet Marketing</a></li>
-								<li class="drop-down__item"><a href="#" class="drop-down__link">Social Media Management</a></li>
+								<li><a href="#" class="drop-down__link">Web Design</a></li>
+								<li><a href="#" class="drop-down__link">Wordpress Design</a></li>
+								<li><a href="#" class="drop-down__link">Mobile App Devplopment</a></li>
+								<li><a href="#" class="drop-down__link">Internet Marketing</a></li>
+								<li><a href="#" class="drop-down__link">Social Media Management</a></li>
 							</ul>
 						</li>
-						<li class="menu__item drop-down"><a href="#" class="menu__link">Portfolio</a>
+						<li class="menu__drop-down drop-down">
+							<a href="#" class="menu__link">Portfolio</a>
 							<ul class="drop-down__list">
-								<li class="drop-down__item"><a href="#" class="drop-down__link">Web Design</a></li>
-								<li class="drop-down__item"><a href="#" class="drop-down__link">Wordpress Design</a></li>
-								<li class="drop-down__item"><a href="#" class="drop-down__link">Mobile App Devplopment</a></li>
-								<li class="drop-down__item"><a href="#" class="drop-down__link">Internet Marketing</a></li>
-								<li class="drop-down__item"><a href="#" class="drop-down__link">Social Media Management</a></li>
+								<li><a href="#" class="drop-down__link">Web Design</a></li>
+								<li><a href="#" class="drop-down__link">Wordpress Design</a></li>
+								<li><a href="#" class="drop-down__link">Mobile App Devplopment</a></li>
+								<li><a href="#" class="drop-down__link">Internet Marketing</a></li>
+								<li><a href="#" class="drop-down__link">Social Media Management</a></li>
 							</ul>
 						</li>
-						<li class="menu__item"><a href="#" class="menu__link">Blog</a></li>
-						<li class="menu__item"><a href="#" class="menu__link">Contact Us</a></li>
+						<li class="menu__blog"><a href="#" class="menu__link">Blog</a></li>
+						<li><a href="#" class="menu__link">Contact Us</a></li>
 					</ul>
+					<div class="burger">
+						<span class="burger-item"></span>
+						<span class="burger-item middle"></span>
+						<span class="burger-item"></span>
+					</div>
 				</nav>
 			</div>
 		</div>
@@ -276,7 +279,7 @@
 	<footer class="footer">
 		<div class="container">
 			<div class="footer__top">
-				<div class="footer__top-items">
+				<div class="footer__top-items footer__about">
 					<h2 class="footer__top-title">about us</h2>
 					<p class="footer__top-descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi euismod placerat
 						dui et tincidunt. Sed sollicitudin posuere auctor. Phasellus at ultricies nisl. Integer at leo eros. Ut nec
@@ -294,7 +297,7 @@
 						</ul>
 					</nav>
 				</div>
-				<div class="footer__top-items">
+				<div class="footer__top-items footer__browse">
 					<h2 class="footer__top-title">browse</h2>
 					<nav class="footer__top-menu">
 						<ul class="footer__top-list">
@@ -306,7 +309,7 @@
 						</ul>
 					</nav>
 				</div>
-				<div class="footer__top-items">
+				<div class="footer__top-items footer__contact">
 					<h2 class="footer__top-title">contact us</h2>
 					<p class="footer__top-address">
 						<span>BisLite Inc.</span>
@@ -316,7 +319,7 @@
 					<a href="tel:9876543210" class="footer__top-phone">Phone: 987-6543-210</a>
 					<a href="tel:9876543210" class="footer__top-phone">Fax: 987-6543-210</a>
 				</div>
-				<div class="footer__top-items">
+				<div class="footer__top-items footer__social">
 					<h2 class="footer__top-title">connect with us</h2>
 					<div class="footer__top-box">
 						<a class="footer__top-social">
@@ -348,12 +351,11 @@
 			</div>
 		</div>
 		<!-- /.container -->
-	</footer>
+	</footer> -->
 	<!-- /.footer -->
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<script src="js/slick.min.js"></script>
 	<script src="js/main.js"></script>
-	<script src="js/script.js"></script>
 </body>
 
 </html>
